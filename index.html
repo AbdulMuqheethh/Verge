@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verge - A Browser Built Different</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+      background: #0a0a0a;
+      color: #d1d5db;
+      line-height: 1.6;
+    }
+    
+    header {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      border-bottom: 1px solid #1f2937;
+    }
+    
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      color: #dc2626;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+      font-family: 'Courier New', monospace;
+    }
+    
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #f3f4f6;
+      line-height: 1.2;
+    }
+    
+    .subtitle {
+      font-size: 18px;
+      color: #9ca3af;
+      margin-bottom: 40px;
+      max-width: 600px;
+    }
+    
+    .buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    
+    .btn {
+      padding: 14px 32px;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      display: inline-block;
+    }
+    
+    .btn-download {
+      background: #dc2626;
+      color: #fff;
+    }
+    
+    .btn-download:hover {
+      background: #b91c1c;
+    }
+    
+    .btn-github {
+      background: #1f2937;
+      color: #d1d5db;
+      border: 1px solid #374151;
+    }
+    
+    .btn-github:hover {
+      background: #2d3748;
+      border-color: #4b5563;
+    }
+    
+    main {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+    
+    .section {
+      margin-bottom: 100px;
+    }
+    
+    .section h2 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #f3f4f6;
+    }
+    
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+    
+    .feature {
+      padding: 0;
+    }
+    
+    .feature h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #f3f4f6;
+    }
+    
+    .feature p {
+      color: #9ca3af;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    
+    .specs {
+      background: #111827;
+      padding: 40px;
+      border-radius: 8px;
+      border: 1px solid #1f2937;
+    }
+    
+    .specs h2 {
+      margin-bottom: 30px;
+    }
+    
+    .specs-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    
+    .spec-item {
+      padding: 0;
+    }
+    
+    .spec-item p {
+      color: #9ca3af;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    
+    .spec-value {
+      font-size: 18px;
+      font-weight: 600;
+      color: #dc2626;
+    }
+    
+    footer {
+      border-top: 1px solid #1f2937;
+      padding: 60px 20px;
+      text-align: center;
+      color: #6b7280;
+      font-size: 14px;
+    }
+    
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    
+    .footer-links a {
+      color: #d1d5db;
+      text-decoration: none;
+    }
+    
+    .footer-links a:hover {
+      color: #dc2626;
+    }
+    
+    @media (max-width: 768px) {
+      h1 { font-size: 36px; }
+      .buttons { flex-direction: column; }
+      .btn { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">VERGE</div>
+    <h1>A browser built different.</h1>
+    <p class="subtitle">No bloat. No tracking. Just you and the web. Built with Chromium, designed by someone who actually uses it.</p>
+    <div class="buttons">
+      <a href="https://github.com/AbdulMuqheeth/verge/releases/download/v1.0.0/Verge%20Setup%201.0.0.exe" class="btn btn-download">Download</a>
+      <a href="https://github.com/AbdulMuqheeth/verge" class="btn btn-github">GitHub</a>
+    </div>
+  </header>
+  
+  <main>
+    <section class="section specs">
+      <h2>What you get</h2>
+      <div class="specs-list">
+        <div class="spec-item">
+          <p>Built on</p>
+          <div class="spec-value">Chromium</div>
+        </div>
+        <div class="spec-item">
+          <p>Size</p>
+          <div class="spec-value">~300 MB</div>
+        </div>
+        <div class="spec-item">
+          <p>License</p>
+          <div class="spec-value">MIT (Free)</div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2>Features</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Tab System</h3>
+          <p>Multiple tabs. Each one gets its own session. Log into the same site in two tabs with different accounts. Works the way you'd expect.</p>
+        </div>
+        
+        <div class="feature">
+          <h3>Clean Design</h3>
+          <p>Dark interface, red accents, monospace address bar. No unnecessary buttons. No AI vibes. Just a browser that looks good and gets out of your way.</p>
+        </div>
+        
+        <div class="feature">
+          <h3>Developer Tools</h3>
+          <p>DevTools one click away. Built for people who actually build things. Fast keyboard access, proper keyboard shortcuts.</p>
+        </div>
+        
+        <div class="feature">
+          <h3>Persistent Sessions</h3>
+          <p>Close the app, open it again. You're still logged in. Your session is saved. No "sign back in" nonsense.</p>
+        </div>
+        
+        <div class="feature">
+          <h3>Open Source</h3>
+          <p>Code's on GitHub. Change whatever you want. Fork it. Use it. Make it yours. No corporate BS.</p>
+        </div>
+        
+        <div class="feature">
+          <h3>Just Works</h3>
+          <p>No setup. No syncing accounts. No cloud nonsense. Download, run, browse. That's it.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="footer-links">
+      <a href="https://github.com/AbdulMuqheeth/verge">GitHub</a>
+      <a href="https://github.com/AbdulMuqheeth/verge/releases">Releases</a>
+      <a href="https://github.com/AbdulMuqheeth/verge/issues">Report a bug</a>
+    </div>
+    <p>&copy; 2026 Verge. Open source and free.</p>
+  </footer>
+</body>
+</html>
